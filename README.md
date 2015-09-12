@@ -4,7 +4,7 @@
 [![Build Status](http://img.shields.io/travis/dhoer/chef-safaridriver.svg?style=flat-square)][travis]
 [![GitHub Issues](http://img.shields.io/github/issues/dhoer/chef-safaridriver.svg?style=flat-square)][github]
 
-[supermarket]: https://supermarket.chef.io/cookbooks/selenium
+[supermarket]: https://supermarket.chef.io/cookbooks/safaridriver
 [travis]: https://travis-ci.org/dhoer/chef-safaridriver
 [github]: https://github.com/dhoer/chef-safaridriver/issues
 
