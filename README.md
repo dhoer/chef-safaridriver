@@ -8,7 +8,7 @@
 [travis]: https://travis-ci.org/dhoer/chef-safaridriver
 [github]: https://github.com/dhoer/chef-safaridriver/issues
 
-This cookbook installs SafariDriver (https://github.com/SeleniumHQ/selenium/wiki/SafariDriver).
+Installs SafariDriver (https://github.com/SeleniumHQ/selenium/wiki/SafariDriver).
 
 ## Requirements
 
@@ -25,12 +25,12 @@ This cookbook installs SafariDriver (https://github.com/SeleniumHQ/selenium/wiki
 
 ## Usage
 
-Include cookbook in recipe or run list. Username and password are required to login to GUI.  
+Include cookbook in recipe or run list to install SafariDriver. Username and password are required to login to GUI.  
 
 ### Attributes
 
 - `node['safaridriver']['username']` - Username to login as. Required.
-- `node['safaridriver']['password']` -  Password for username. Required.
+- `node['safaridriver']['password']` -  Password of username. Required.
 - `node['safaridriver']['url']` - URL of SafariDriver to download.
 
 ### Example
