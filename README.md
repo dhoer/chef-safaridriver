@@ -1,6 +1,6 @@
 # SafariDriver Cookbook
 
-[![Cookbook Version](http://img.shields.io/cookbook/v/selenium.svg?style=flat-square)][supermarket]
+[![Cookbook Version](http://img.shields.io/cookbook/v/safaridriver.svg?style=flat-square)][supermarket]
 [![Build Status](http://img.shields.io/travis/dhoer/chef-safaridriver.svg?style=flat-square)][travis]
 [![GitHub Issues](http://img.shields.io/github/issues/dhoer/chef-safaridriver.svg?style=flat-square)][github]
 
