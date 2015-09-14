@@ -53,8 +53,9 @@ describe 'safaridriver_test::default' do
 
   context 'mac_os_x' do
     let(:chef_run) do
-      ChefSpec::SoloRunner.new(
-        file_cache_path: '/var/chef/cache', platform: 'mac_os_x', version: '10.10').converge(described_recipe)
+      ChefSpec::SoloRunner.new(file_cache_path: '/var/chef/cache', platform: 'mac_os_x', version: '10.10') do
+        allow_any_instance_of(Chef::Recipe).to receive(:safari_version).and_return('8.0.4')
+      end.converge(described_recipe)
     end
 
     it 'downloads driver' do
