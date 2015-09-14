@@ -12,6 +12,7 @@ Installs SafariDriver (https://github.com/SeleniumHQ/selenium/wiki/SafariDriver)
 
 ## Requirements
 
+- Mac OS X 10.8+
 - Chef 12.3+
 
 ### Platforms
@@ -35,17 +36,30 @@ Include cookbook in recipe or run list to install SafariDriver. Username and pas
 
 ### Example
 
-#### Install SafariDriver 
+#### Install selenium node with safari capability
 
 ```ruby
-node.set['safaridriver']['username'] = 'username'
-node.set['safaridriver']['password'] = 'password'
+username = 'username'
+password = 'password'
+
+node.set['safaridriver']['username'] = username
+node.set['safaridriver']['password'] = password
 
 include_recipe 'safaridriver'
-```
 
-See [safaridriver_test::default](https://github.com/dhoer/chef-safaridriver/blob/master/test/fixtures/cookbooks/safaridriver_test/recipes/default.rb) 
-for a complete example that includes Selenium install.
+node.set['selenium']['node']['username'] = username
+node.set['selenium']['node']['password'] = password
+node.set['selenium']['node']['capabilities'] = [
+  {
+    browserName: 'safari',
+    maxInstances: 1,
+    version: safari_version,
+    seleniumProtocol: 'WebDriver'
+  }
+]
+
+include_recipe 'selenium::node'
+```
 
 ## Getting Help
 

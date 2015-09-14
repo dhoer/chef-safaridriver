@@ -9,3 +9,6 @@ version '0.1.0'
 depends 'java_se', '~> 8.0'
 depends 'selenium'
 depends 'safaridriver'
+
+# TODO: Remove when Selenium 3.x is released
+depends 'macosx_autologin'
