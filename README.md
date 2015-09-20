@@ -1,4 +1,4 @@
-# SafariDriver Cookbook
+# Selenium SafariDriver Cookbook
 
 [![Cookbook Version](http://img.shields.io/cookbook/v/safaridriver.svg?style=flat-square)][supermarket]
 [![Build Status](http://img.shields.io/travis/dhoer/chef-safaridriver.svg?style=flat-square)][travis]
