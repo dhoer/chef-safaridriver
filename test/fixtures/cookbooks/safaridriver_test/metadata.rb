@@ -6,9 +6,7 @@ description 'Tests SafariDriver'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '0.1.0'
 
-depends 'java_se', '~> 8.0'
-depends 'selenium'
 depends 'safaridriver'
-
-# TODO: Remove when Selenium 3.x is released
-depends 'macosx_autologin'
+depends 'java_se', '~> 8.0'
+depends 'selenium', '~> 3.0'
+depends 'macosx_autologin', '~> 3.0'
