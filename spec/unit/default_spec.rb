@@ -9,7 +9,7 @@ describe 'safaridriver_test::default' do
 
     it 'does not download driver' do
       expect(chef_run).to_not create_remote_file('/var/chef/cache/SafariDriver.safariextz').with(
-        source: 'https://selenium-release.storage.googleapis.com/2.45/SafariDriver.safariextz'
+        source: 'https://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz'
       )
     end
 
@@ -34,7 +34,7 @@ describe 'safaridriver_test::default' do
 
     it 'does not download driver' do
       expect(chef_run).to_not create_remote_file('/var/chef/cache/SafariDriver.safariextz').with(
-        source: 'https://selenium-release.storage.googleapis.com/2.45/SafariDriver.safariextz'
+        source: 'https://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz'
       )
     end
 
@@ -60,7 +60,7 @@ describe 'safaridriver_test::default' do
 
     it 'downloads driver' do
       expect(chef_run).to create_remote_file('/var/chef/cache/SafariDriver.safariextz').with(
-        source: 'https://selenium-release.storage.googleapis.com/2.45/SafariDriver.safariextz'
+        source: 'https://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz'
       )
     end
 
